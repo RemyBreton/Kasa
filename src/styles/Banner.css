@@ -1,0 +1,32 @@
+ .banner {
+    height: 233px;
+    border-radius: 25px;
+    background: linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.3)), url('src/assets/Banner.svg');
+    margin: auto;
+    display: grid;
+    place-items: center;
+    margin-bottom:  43px;
+    background-size: cover;
+}
+
+.banner h1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+@media screen and (width <= 375px) {
+    .banner {
+      height: 111px;
+      margin-bottom: 22px;
+      background-position: center;
+    }
+    .banner h1 {
+        font-size: 24px;
+        padding-left: 16px;
+    }
+}
+
+

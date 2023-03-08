@@ -1,0 +1,10 @@
+.blockPage {
+    margin: 0 100px 100px;
+    max-width: 1240px;
+}
+
+@media screen and (width <= 375px) {
+    .blockPage {
+        margin: 0 20px 100px;
+    }
+}

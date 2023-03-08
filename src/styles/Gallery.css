@@ -1,0 +1,17 @@
+.grid {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 56px 50px;
+    gap: 50px 60px;
+}
+
+@media screen and (width <= 375px) {
+    .grid {
+        grid-template-columns: 1fr;
+        background-color: white;
+        padding: 0;
+        gap: 20px;
+    }
+}
