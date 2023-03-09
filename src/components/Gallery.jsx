@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Gallery.css';
+import '../styles/Gallery.scss';
 import Apartment from './Apartment.jsx';
 
 function Gallery() {

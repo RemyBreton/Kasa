@@ -1,0 +1,33 @@
+@use '../styles/Scss/variables.scss' as *;
+
+.footer {
+    background-color: $background-footer;
+    text-align: center;
+    padding: 66px 0 29px;
+    max-height: 209px;
+    &__logo {
+        margin-bottom: 29px;
+        & img {
+            height: 39.44px;
+            width: 122px;
+            filter: brightness(100);
+        }
+    }
+    &__text {
+        color: $secondary-color;
+        font-size: 24px;
+    }
+}
+
+@media screen and (width <= 375px) {
+    .footer {
+        padding: 62px 0;
+        max-height: 209px;
+        &__logo {
+            margin-bottom: 39px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
