@@ -1,0 +1,35 @@
+@use '../styles/Scss/variables.scss' as *;
+
+.flat__description {
+    h4 {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border-radius: 10px;
+        padding: 0.722em 0.5em 0.722em 1.111em;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+
+        i {
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        span {
+            align-self: center; 
+        }
+    }
+
+    p {
+        background-color: $flatpage-background-description;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: -30px;
+        position: relative;
+        z-index: -1;
+        padding: 40px 12px 53px 20px;
+    }
+}

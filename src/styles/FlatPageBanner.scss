@@ -1,0 +1,10 @@
+@use '../styles/Scss/variables.scss' as *;
+
+.flat-page__container__img {
+        margin-bottom: 30px;
+    img {
+        border-radius: 25px;
+        height: 415px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+@use '../styles/Scss/variables.scss' as *;
+
+.flat-page {
+    color: $primary-color;
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 1.111em;
+    }
+
+    & .flat__tags {
+        display: flex;
+        gap: 0.714rem;
+        height: 25px;
+
+        span {
+            background-color: $primary-color;
+            color: $secondary-color;
+            font-weight: 500;
+            font-size: 14px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 0.214em 2.929em 0.143em 2.857em;
+        }
+    }
+
+    .flat__header {
+        display: flex;
+        margin-bottom: 26px;
+
+        .flat__title {
+            flex-grow: 1;
+        }
+
+        .flat__owner__details {
+            display: flex;
+            margin-bottom: 12px;
+
+            h3 {
+                margin-right: 0.556em;
+                font-weight: 500;
+                font-size: 18px;
+                width: min-content;
+                text-align: end;
+                margin-top: 0;
+                margin-bottom: 0;
+                align-self: center;
+            }
+        }
+
+        .flat__owner__badge {
+            height: 64px;
+            width: 64px;
+            background: $flatpage-badge;
+            border-radius: 50%;
+        }
+
+        .flat__owner__stars {
+            display: flex;
+            gap: 10px;
+            font-size: 30px;
+
+            .on {
+                color: $primary-color;
+            }
+
+            .off {
+                color: $flatpage-stars-off;
+            }
+        }
+    }
+}

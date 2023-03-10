@@ -6,9 +6,9 @@ import "../styles/Apartment.scss";
 function Apartment() {
   return (
     <Link to="/flat">
-      <div className="apartment">
+      <article className="apartment">
         <div className="apartment__title">Titre de la location</div>
-      </div>
+      </article>
     </Link>
   );
 }

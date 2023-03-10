@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles/HomePage.scss';
-import Banner from './components/Banner.jsx';
-import Gallery from './components/Gallery.jsx';
+import '../styles/HomePage.scss';
+import Banner from '../components/Banner.jsx';
+import Gallery from '../components/Gallery.jsx';
 
 
 

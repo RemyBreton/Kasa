@@ -1,5 +1,6 @@
 import React from "react";
-import HomePage from "../HomePage.jsx";
+import HomePage from "../Pages/HomePage.jsx";
+import FlatPage from '../Pages/FlatPage.jsx';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"; // importation des deux fonctions de react-router-dom
 import Navbar from "../Layout/Navbar.jsx";
 import Footer from "../Layout/Footer.jsx";
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/flat",
-        element: <h1>Appartement</h1>,
+        element: <FlatPage />
       },
       {
         path: "/about",

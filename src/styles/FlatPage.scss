@@ -1,0 +1,7 @@
+@use '../styles/Scss/variables.scss' as *;
+
+.flat__container__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 76px;
+}
