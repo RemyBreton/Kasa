@@ -1,0 +1,25 @@
+@use '../styles/Scss/variables.scss' as *;
+
+.grid {
+    background-color: $background-FlatGallery-D;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 56px 50px;
+    gap: 50px 60px;
+}
+
+@media screen and (width <= 1024px) {
+    .grid {
+        gap: 20px;
+    }
+}
+
+@media screen and (width <= 425px) {
+    .grid {
+        background-color: $background-FlatGallery-M;
+        padding: 0;
+
+    }
+}

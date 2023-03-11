@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/FlatDescription.scss'
+import '../styles/DescriptionPanel.scss'
 
-function FlatDescription() {
+function DescriptionPanel() {
   return (
-    <div className="flat__description">
-    <h4 className="flat__description__header">
+    <div className="description-panel">
+    <h4 className="description-panel__header">
       <span>Description</span>
       <i className="fa-sharp fa-solid fa-chevron-up"></i>
       </h4>
@@ -20,4 +20,4 @@ function FlatDescription() {
   )
 }
 
-export default FlatDescription
+export default DescriptionPanel

@@ -1,21 +1,21 @@
 import React from "react";
-import FlatDescription from "../components/FlatDescription";
-import FlatPageBanner from "../components/FlatPageBanner";
+import DescriptionPanel from "../components/DescriptionPanel";
+import ImageBanner from "../components/ImageBanner";
 import FlatHeader from "../components/FlatHeader";
 
 import "../styles/FlatPage.scss";
 
-function ApartmentPage() {
+function FlatPage() {
   return (
     <section className="flat-page">
-      <FlatPageBanner />
+      <ImageBanner />
       <FlatHeader />
       <div className="flat__container__description">
-        <FlatDescription />
-        <FlatDescription />
+        <DescriptionPanel />
+        <DescriptionPanel />
       </div>
-    </section>
+    </section> 
   );
 }
 
-export default ApartmentPage;
+export default FlatPage;

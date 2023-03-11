@@ -1,0 +1,21 @@
+@use '../styles/Scss/variables.scss' as *;
+
+.image__banner {
+    margin-bottom: 30px;
+
+    img {
+        border-radius: 25px;
+        height: 415px;
+        width: 100%;
+    }
+}
+
+@media screen and (width <=1024px) {
+    .image__banner {
+        margin-bottom: 15px;
+
+        img {
+            height: 255px;
+        }
+    }
+}

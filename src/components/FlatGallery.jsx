@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/Gallery.scss';
+import '../styles/FlatGallery.scss';
 import Apartment from './Apartment.jsx';
 
-function Gallery() {
+function FlatGallery() {
   return (
     <section className='grid'>
       <Apartment />
@@ -15,4 +15,4 @@ function Gallery() {
   )
 }
 
-export default Gallery
+export default FlatGallery

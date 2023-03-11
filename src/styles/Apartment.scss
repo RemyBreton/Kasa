@@ -1,28 +1,38 @@
 @use '../styles/Scss/variables.scss' as *;
 
+.apartment__anchor {
+    text-decoration: inherit;
+}
+
 .apartment {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://picsum.photos/340/340");
     background-color: $primary-color;
     border-radius: 10px;
     display: grid;
     align-items: end;
-    max-height: 340px;
-    max-width: 340px;
+    height: 340px;
+    width: 340px;
     &__title {
         width: 44%;
         color: $secondary-color;
-        margin: 0 20px 20px ;
+        margin: 0 20px 20px;
         font-size: 18px;
     }
 }
 
-@media screen and (width <= 375px) {
+@media screen and (width <=768px) {
     .apartment {
-        max-height: 235px;
-        max-width: 335px;
+        height: 255px;
+        width: 335px;
+    }
+}
+
+
+@media screen and (width <=375px) {
+    .apartment {
         &__title {
             width: 44%;
-            margin: 0 20px 15px ;
+            margin: 0 20px 15px;
         }
     }
 }

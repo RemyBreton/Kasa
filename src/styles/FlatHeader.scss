@@ -29,7 +29,8 @@
             font-size: 14px;
             border-radius: 10px;
             text-align: center;
-            padding: 0.214em 2.929em 0.143em 2.857em;
+            padding: 0.3em 0.5em;
+            width: 115px;
         }
     }
 
@@ -40,10 +41,8 @@
         .flat__title {
             flex-grow: 1;
         }
-
         .flat__owner__details {
             display: flex;
-            margin-bottom: 12px;
 
             h3 {
                 margin-right: 0.556em;
@@ -75,6 +74,57 @@
 
             .off {
                 color: $flatpage-stars-off;
+            }
+        }
+    }
+}
+
+@media screen and (width <=768px) {
+    .flat-page {
+        &__title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            margin-bottom: 0.869em;
+        }
+
+        & .flat__tags {
+            height: 18px;
+            margin-bottom: 1.6em;
+
+            span {
+                font-size: 10px;
+                width: 85px;
+            }
+        }
+
+        .flat__header {
+            flex-direction: column;
+            margin-bottom: 16.5px;
+            .flat__owner {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .flat__owner__badge {
+                height: 32px;
+                width: 32px;
+            }
+
+            .flat__owner__details {
+                order: 1;
+
+                h3 {
+                    font-size: 12px;
+                }
+            }
+
+            .flat__owner__stars {
+                font-size: 15px;
+                align-items: center;
             }
         }
     }

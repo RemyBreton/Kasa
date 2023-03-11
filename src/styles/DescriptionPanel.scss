@@ -1,6 +1,7 @@
 @use '../styles/Scss/variables.scss' as *;
 
-.flat__description {
+.description-panel {
+    margin-bottom: 33px;
     h4 {
         background-color: $primary-color;
         color: $secondary-color;
@@ -18,7 +19,7 @@
         }
 
         span {
-            align-self: center; 
+            align-self: center;
         }
     }
 
@@ -31,5 +32,23 @@
         position: relative;
         z-index: -1;
         padding: 40px 12px 53px 20px;
+    }
+}
+
+@media screen and (width <=768px) {
+    .description-panel {
+        margin-bottom: 0;
+        h4 {
+            font-size: 13px;
+
+            i {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+            padding: 23px 6.91px 1.3px 11.51px
+        }
     }
 }

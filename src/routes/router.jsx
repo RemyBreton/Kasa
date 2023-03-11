@@ -6,6 +6,8 @@ import Navbar from "../Layout/Navbar.jsx";
 import Footer from "../Layout/Footer.jsx";
 import Main from "../Layout/Main.jsx";
 import ReactDOM from "react-dom/client";
+import About from "../Pages/About.jsx";
+import ErrorPage from '../Pages/ErrorPage.jsx';
 
 const HeaderFooterLayout = () => {
   // recuperation de la navbar et du footer pour injecter un outlet au milieu
@@ -24,6 +26,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HeaderFooterLayout />,
+    errorElement: <ErrorPage />,
     children: [
       // outlet injecter
       {
@@ -32,11 +35,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/flat",
-        element: <FlatPage />
+        element: <FlatPage /> 
       },
       {
         path: "/about",
-        element: <h1>A propos</h1>,
+        element: <About />,
       }
     ]
   }

@@ -5,3 +5,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 76px;
 }
+
+@media screen and (width <=768px) {
+    .flat__container__description {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
