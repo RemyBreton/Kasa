@@ -1,35 +1,34 @@
-import React from 'react'
-import '../styles/FlatHeader.scss'
+import React from "react";
+import "../styles/FlatHeader.scss";
 
-function FlatHeader() {
+function FlatHeader({flat}) {
+
   return (
     <div className="flat__header">
-    <div className="flat__title">
-      <h1 className="flat-page__title">
-        Cozy loft on the Canal Saint-Martin
-      </h1>
-      <h2 className="flat-page__subtitle">Paris, Île-de-France</h2>
-      <div className="flat__tags">
-        <span>Cozy</span>
-        <span>Canal</span>
-        <span>Paris 10</span>
+      <div className="flat__title">
+        <h1 className="flat-page__title">{flat.title}</h1>
+        <h2 className="flat-page__subtitle">{flat.location}</h2>
+        <div className="flat__tags">
+          {flat.tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+      </div>
+      <div className="flat__owner">
+        <div className="flat__owner__details">
+          <h3>{flat.host.name}</h3>
+          <img className="flat__owner__badge" src={flat.host.picture} />
+        </div>
+        <div className="flat__owner__stars">
+          {[1, 2, 3, 4, 5].map((num) => (
+            <span key={num} className={flat.rating >= num ? "on" : ""}>★</span>
+            // pour chaque numéro création d'une span avec une étoile de couleur par defaut grise mais si le rating
+            // est superieur ou égale au numéro création d'une classe 'on'
+          ))}
+        </div>
       </div>
     </div>
-    <div className="flat__owner">
-      <div className="flat__owner__details">
-        <h3>Alexandre Dumas</h3>
-        <div className="flat__owner__badge"></div>
-      </div>
-      <div className="flat__owner__stars">
-        <span className="on">★</span>
-        <span className="on">★</span>
-        <span className="on">★</span>
-        <span className="off">★</span>
-        <span className="off">★</span>
-      </div>
-    </div>
-  </div>
-  )
+  );
 }
 
-export default FlatHeader
+export default FlatHeader;

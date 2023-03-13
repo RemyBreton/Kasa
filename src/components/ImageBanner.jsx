@@ -1,10 +1,10 @@
 import React from "react";
 import '../styles/ImageBanner.scss'
 
-function ImageBanner() {
+function ImageBanner(props) {
   return (
     <div className="image__banner">
-      <img src="https://picsum.photos/800/400" alt="" />
+      <img src={props.imageUrl} alt="image de l'appartement" />
     </div>
   );
 }

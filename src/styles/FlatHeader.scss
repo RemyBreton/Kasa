@@ -41,9 +41,14 @@
         .flat__title {
             flex-grow: 1;
         }
+        .flat__owner {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
         .flat__owner__details {
             display: flex;
-
+            justify-content: flex-end;
             h3 {
                 margin-right: 0.556em;
                 font-weight: 500;
@@ -67,13 +72,10 @@
             display: flex;
             gap: 10px;
             font-size: 30px;
+            color: $flatpage-stars-off;
 
             .on {
                 color: $primary-color;
-            }
-
-            .off {
-                color: $flatpage-stars-off;
             }
         }
     }
@@ -104,9 +106,10 @@
         .flat__header {
             flex-direction: column;
             margin-bottom: 16.5px;
+
             .flat__owner {
-                display: flex;
                 justify-content: space-between;
+                flex-direction: row;
             }
 
             .flat__owner__badge {
