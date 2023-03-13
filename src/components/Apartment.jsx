@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'; // evitera la balise <a> qui au clique 
 
 import "../styles/Apartment.scss";
 
-function Apartment() {
+function Apartment(props) {
   return (
     <Link className="apartment__anchor" to="/flat">
       <article className="apartment">
-        <h2 className="apartment__title">Titre de la location</h2>
+        <img src={props.imageUrl} alt="image de l'appartement" />
+        <h2 className="apartment__title">{props.title}</h2>
       </article>
     </Link>
   );
