@@ -1,12 +1,53 @@
 @use '../styles/Scss/variables.scss' as *;
 
 .image__banner {
+    position: relative;
     margin-bottom: 30px;
-    img {
-        border-radius: 25px;
+
+    .btn-previous {
+        left: 23px;
+    }
+
+    .btn-next {
+        right: 23px;
+    }
+
+    .btn-next,
+    .btn-previous {
+        position: absolute;
+        top: 156.7px;
+        bottom: 0;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+            filter: brightness(10%);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    .image__container {
+        position: relative;
         height: 415px;
-        width: 100%;
-        object-fit: cover;
+
+        .default__banner {
+            opacity: 1;
+        }
+
+        img {
+            position: absolute;
+            inset: 0;
+            border-radius: 25px;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+
+            &.show {
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -14,7 +55,22 @@
     .image__banner {
         margin-bottom: 15px;
 
-        img {
+        .btn-next,
+        .btn-previous {
+            top: 120px;
+            height: 20px;
+            width: 12px;
+        }
+
+        .btn-next {
+            right: 6px;
+        }
+
+        .btn-previous {
+            left: 6px;
+        }
+
+        .image__container {
             height: 255px;
         }
     }

@@ -29,7 +29,7 @@ function FlatPage() {
   if (flat == null) return <div>LOADING...</div>; // afin d'eviter une erreur 404 si une conexion internet instable
   return (
     <section className="flat-page">
-      <ImageBanner imageUrl={flat.cover} />
+      <ImageBanner pictures={flat.pictures} />
       <FlatHeader flat={flat}/>
       {/*passage de tout l'objet en props meme si c'est pas forcement genial de lui donner plus d'info que besoin sa restera toujours plus propre */}
       <div className="flat__container__description">
