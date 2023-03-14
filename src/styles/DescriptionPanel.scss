@@ -1,8 +1,7 @@
 @use '../styles/Scss/variables.scss' as *;
 
 .description-panel {
-    margin-bottom: 33px;
-    h4 {
+    &__header {
         background-color: $primary-color;
         color: $secondary-color;
         border-radius: 10px;
@@ -23,24 +22,24 @@
         }
     }
 
-    p {
+    &__content {
         background-color: $flatpage-background-description;
         border-radius: 10px;
         font-weight: 400;
         font-size: 18px;
-        margin-top: -30px;
+        top: -30px;
         position: relative;
         z-index: -1;
         padding: 40px 12px 53px 20px;
         display: flex;
         flex-direction: column;
+        color: $primary-color;
     }
 }
 
 @media screen and (width <=768px) {
     .description-panel {
-        margin-bottom: 0;
-        h4 {
+        &__header {
             font-size: 13px;
 
             i {
@@ -48,7 +47,7 @@
             }
         }
 
-        p {
+        &__content {
             font-size: 12px;
             padding: 23px 6.91px 1.3px 11.51px
         }

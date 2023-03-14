@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 76px;
+    overflow: hidden;
 }
 
 @media screen and (width <=768px) {
