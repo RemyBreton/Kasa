@@ -4,6 +4,16 @@
     position: relative;
     margin-bottom: 30px;
 
+    span {
+        position: absolute;
+        bottom: 24px;
+        color: $secondary-color;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+    }
+
     .btn-previous {
         left: 23px;
     }
@@ -21,7 +31,6 @@
 
         &:hover {
             transform: scale(1.2);
-            filter: brightness(10%);
             transition: all 0.5s ease-in-out;
         }
     }
@@ -51,7 +60,7 @@
     }
 }
 
-@media screen and (width <=1024px) {
+@media screen and (width <= 768px) {
     .image__banner {
         margin-bottom: 15px;
 
@@ -72,6 +81,14 @@
 
         .image__container {
             height: 255px;
+        }
+    }
+}
+
+@media screen and (width <=425px) {
+    .image__banner {
+        span{
+            display: none;
         }
     }
 }

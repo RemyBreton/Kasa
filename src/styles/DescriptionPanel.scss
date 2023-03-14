@@ -1,6 +1,7 @@
 @use '../styles/Scss/variables.scss' as *;
 
 .description-panel {
+    overflow: hidden;
     &__header {
         background-color: $primary-color;
         color: $secondary-color;
@@ -31,9 +32,33 @@
         position: relative;
         z-index: -1;
         padding: 40px 12px 53px 20px;
-        display: flex;
-        flex-direction: column;
+        list-style: none;
         color: $primary-color;
+    }
+    .visible {
+       animation: slide-in 0.5s ease-in-out;
+    }
+    .hidden {
+        animation: slide-out 0.5s ease-in-out;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 

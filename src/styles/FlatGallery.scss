@@ -8,6 +8,9 @@
     justify-content: center;
     padding: 56px 50px;
     gap: 50px 60px;
+    .apartment:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media screen and (width <= 1024px) {
@@ -20,6 +23,5 @@
     .grid {
         background-color: $background-FlatGallery-M;
         padding: 0;
-
     }
 }

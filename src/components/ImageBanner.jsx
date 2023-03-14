@@ -3,11 +3,16 @@ import "../styles/ImageBanner.scss";
 
 function ImageBanner(props) {
   const pictures = props.pictures;
+
   const [currentPicture, setCurrentPicture] = useState(0);
+  // currentPicture commence à 0
+
   const getClassName = (i) => {
+    // si currentPicture+1 ajout de la className "Show"
     if (i === currentPicture) return "show";
     return "";
   };
+
   const next = () => {
     setCurrentPicture((currentPicture + 1) % pictures.length);
     // modulo qui permettra de loop à l'infini sur l'array sans depasser le nombre d'entrée
@@ -20,7 +25,7 @@ function ImageBanner(props) {
       setCurrentPicture(pictures.length - 1);
       return;
     }
-    setCurrentPicture((currentPicture - 1) % pictures.length);
+    setCurrentPicture(currentPicture - 1);
   };
 
   const pictureAvailable = () => {
@@ -57,6 +62,7 @@ function ImageBanner(props) {
             src="src/assets/ChevronPrevious.svg"
             onClick={previous}
           />
+          <span>{currentPicture + 1 + "/" + pictures.length}</span>
           <img
             className="btn-next"
             src="src/assets/ChevronNext.svg"

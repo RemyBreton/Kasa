@@ -7,17 +7,18 @@ function DescriptionPanel(props) {
   const showContent = () => {
     setIsVisibleContent(!isVisibleContent);
   };
-
+  const contentClass =
+    (isVisibleContent ? "hidden" : "visible") + " description-panel__content";
+  const chevronClass =
+    (isVisibleContent ? "fa-chevron-down" : "fa-chevron-up") +
+    " fa-sharp fa-solid";
   return (
     <div className="description-panel">
       <h4 className="description-panel__header">
         <span>{props.title}</span>
-        <i
-          className="fa-sharp fa-solid fa-chevron-up"
-          onClick={showContent}
-        ></i>
+        <i className={chevronClass} onClick={showContent}></i>
       </h4>
-       {isVisibleContent && <p className="description-panel__content">{props.content}</p>}
+      <p className={contentClass}>{props.content}</p>
     </div>
   );
 }
