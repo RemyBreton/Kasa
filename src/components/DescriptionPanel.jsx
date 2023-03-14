@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/DescriptionPanel.scss";
 
 function DescriptionPanel(props) {
-  const [isVisibleContent, setIsVisibleContent] = useState(false);
+  const [isVisibleContent, setIsVisibleContent] = useState(true);
 
   const showContent = () => {
     setIsVisibleContent(!isVisibleContent);

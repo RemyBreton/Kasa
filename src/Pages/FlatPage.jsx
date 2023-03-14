@@ -16,7 +16,7 @@ function FlatPage() {
       {/*passage de tout l'objet en props meme si c'est pas forcement genial de lui donner plus d'info que besoin sa restera toujours plus propre */}
       <div className="flat__container__description">
         <DescriptionPanel title="Description" content={flat.description} />
-        <DescriptionPanel title="Equipements" content={flat.equipments.map(eq => <li>{eq}</li>)} />
+        <DescriptionPanel title="Equipements" content={flat.equipments.map(eq => <li key={eq}>{eq}</li>)} />
       </div>
     </section>
   );
