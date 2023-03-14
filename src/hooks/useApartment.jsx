@@ -7,7 +7,7 @@ function useApartment() {
   useEffect(() => {
     // fetch du db.Json par rapport à son id de location afin de renvoyer l'objet correspondant
     const abordController = new AbortController();
-    fetch("src/db.json")
+    fetch("https://remybreton.github.io/api/db.json")
       .then((res) => res.json())
       .then((flats) => {
         const flat = flats.find(
@@ -24,4 +24,4 @@ function useApartment() {
   return flat;
 }
 
-export default useApartment;
+export default useApartment; 
