@@ -3,6 +3,8 @@
 
     p {
         font-size: 24px;
+        font-weight: 400;
+        padding: 36px 27px 19px 18px;
     }
 }
 
@@ -10,5 +12,22 @@
 @media screen and (width <=1024px) {
     .about__container {
         padding-inline: 0;
+    }
+}
+
+@media screen and (width <=768px) {
+    .about__container {
+        p {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (width <=425px) {
+    .about__container {
+        p {
+            padding: 23px 7px 52px 11px;
+        }
     }
 }

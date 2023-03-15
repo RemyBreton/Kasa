@@ -1,13 +1,15 @@
 import React from "react";
 import ImageBanner from "../components/ImageBanner.jsx";
 import DescriptionPanel from "../components/DescriptionPanel";
-
+import bannerImg from '../assets/AboutBanner.svg'
+import Banner from "../components/Banner.jsx";
 import "../styles/About.scss";
 
 function About() {
+
   return (
     <>
-      <ImageBanner />
+      <Banner bannerImg={bannerImg} />
       <section className="about__container">
         <DescriptionPanel
           title="Fiabilité"

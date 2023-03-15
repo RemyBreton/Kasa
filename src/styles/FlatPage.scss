@@ -10,6 +10,6 @@
 @media screen and (width <=1024px) {
     .flat__container__description {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 0;
     }
 }

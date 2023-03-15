@@ -2,6 +2,7 @@
 
 .description-panel {
     overflow: hidden;
+
     &__header {
         background-color: $primary-color;
         color: $secondary-color;
@@ -28,35 +29,31 @@
         border-radius: 10px;
         font-weight: 400;
         font-size: 18px;
-        top: -30px;
+        margin-top: -30px;
         position: relative;
         z-index: -1;
+        margin-bottom: 33px;
         padding: 40px 12px 53px 20px;
         list-style: none;
         color: $primary-color;
     }
+
     .visible {
-       animation: slide-in 0.5s ease-in-out;
+        animation: slide-in 0.5s ease-in-out;
     }
+
     .hidden {
-        animation: slide-out 0.5s ease-in-out;
-        transform: translateY(-100%);
+        display: none;
     }
 }
 
-@keyframes slide-out {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
+
 
 @keyframes slide-in {
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -74,7 +71,7 @@
 
         &__content {
             font-size: 12px;
-            padding: 23px 6.91px 1.3px 11.51px
+            padding: 23px 6.91px 1.3px 11.51px;
         }
     }
 }
