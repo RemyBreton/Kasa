@@ -2,7 +2,9 @@ import React from "react";
 import "../styles/Banner.scss";
 
 function Banner(props) {
+  // Création de la Banner sous condition
   const banner = () => {
+    // Si la Banner contient une props alors retournera une class differente
     if (!props.bannerImg) {
       return (
         <section className="banner">

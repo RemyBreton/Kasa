@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function useApartment() {
+  // Recuperation des data d'un seul apartment dans l'api 
   const [flat, setFlat] = useState(null);
   const location = useLocation();
   useEffect(() => {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/DescriptionPanel.scss";
 
 function DescriptionPanel(props) {
+  // Création des panels avec deux class differentes en fonction de si le panels est visible ou non au clique
   const [isVisibleContent, setIsVisibleContent] = useState(true);
 
   const showContent = () => {

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"; // evitera la balise <a> qui au clique 
 import "../styles/Apartment.scss";
 
 function Apartment(props) {
+  // Creation d'un article cliquable en lui passant son id et en recuperant son image et son titre grace à props
   return (
     <Link
       className="apartment__anchor"

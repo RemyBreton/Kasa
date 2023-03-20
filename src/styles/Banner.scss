@@ -3,7 +3,7 @@
 .banner {
     height: 223px;
     border-radius: 25px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('src/assets/Banner.svg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/Banner.svg');
     margin: auto;
     display: grid;
     place-items: center;
@@ -13,7 +13,7 @@
     &-default {
         height: 223px;
         border-radius: 25px;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('src/assets/AboutBanner.svg');
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/AboutBanner.svg');
         margin: auto;
         background-position: center;
         margin-bottom: 43px;

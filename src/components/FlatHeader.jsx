@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/FlatHeader.scss";
 
 function FlatHeader({flat}) {
+  // Création du header de la page flat
 
   return (
     <div className="flat__header">
@@ -10,6 +11,7 @@ function FlatHeader({flat}) {
         <h2 className="flat-page__subtitle">{flat.location}</h2>
         <div className="flat__tags">
           {flat.tags.map((tag) => (
+            // Création de span pour chaque data tag 
             <span key={tag}>{tag}</span>
           ))}
         </div>

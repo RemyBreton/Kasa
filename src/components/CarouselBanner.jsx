@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "../styles/ImageBanner.scss";
+import "../styles/CarouselBanner.scss";
+import chevronNext from "../assets/chevronNext.svg";
+import chevronPrevious from "../assets/chevronPrevious.svg";
 
-function ImageBanner(props) {
+function CarouselBanner(props) {
   const pictures = props.pictures;
 
   const [currentPicture, setCurrentPicture] = useState(0);
@@ -34,6 +36,7 @@ function ImageBanner(props) {
 
   const carouselOrDefaultBanner = () => {
     if (!pictureAvailable()) {
+      // Si different de la fonction alors return une img sinon return un map() avec les img de l'api
       return (
         <img
           className="default__banner"
@@ -59,13 +62,13 @@ function ImageBanner(props) {
         <>
           <img
             className="btn-previous"
-            src="src/assets/ChevronPrevious.svg"
+            src={chevronPrevious}
             onClick={previous}
           />
           <span>{currentPicture + 1 + "/" + pictures.length}</span>
           <img
             className="btn-next"
-            src="src/assets/ChevronNext.svg"
+            src={chevronNext}
             onClick={next}
           />
         </>
@@ -74,4 +77,4 @@ function ImageBanner(props) {
   );
 }
 
-export default ImageBanner;
+export default CarouselBanner;

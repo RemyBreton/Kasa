@@ -6,6 +6,7 @@ import FlatGallery from '../components/FlatGallery.jsx';
 
 
 function HomePage() {
+  // Creation de la HomePage avec les composants Banner && FlatGallery
   return (
     <>
         <Banner />

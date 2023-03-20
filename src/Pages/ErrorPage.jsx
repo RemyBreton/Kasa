@@ -6,6 +6,7 @@ import Footer from "../Layout/Footer";
 import "../styles/ErrorPage.scss";
 
 function ErrorPage() {
+  // Création de la page error avec les composants Navbar Main && Footer
   return (
     <>
       <Navbar />

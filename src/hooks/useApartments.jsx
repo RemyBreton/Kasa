@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 const useApartments = () => {
+  // Récuperation des appartements et leurs data dans l'api
   const [apartments, setApartments] = useState([]);
 
   useEffect(() => {

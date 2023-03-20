@@ -5,6 +5,7 @@ import "../styles/Navbar.scss";
 import logo from "../assets/logo.svg";
 
 function Navbar() {
+  // Création d'une Navbar
   return (
     <header className="header">
       <Link to="/">

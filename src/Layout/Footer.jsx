@@ -3,6 +3,7 @@ import footerLogo from '../assets/logo.svg';
 import '../styles/Footer.scss'
 
 function Footer() {
+  // Création du footer
   return (
     <footer className='footer'>
       <div className='footer__logo'>
