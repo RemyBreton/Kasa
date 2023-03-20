@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/CarouselBanner.scss";
-import chevronNext from "../assets/chevronNext.svg";
-import chevronPrevious from "../assets/chevronPrevious.svg";
+import chevronNext from "../assets/ChevronNext.svg";
+import chevronPrevious from "../assets/ChevronPrevious.svg";
 
 function CarouselBanner(props) {
   const pictures = props.pictures;
