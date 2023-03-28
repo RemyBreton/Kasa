@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/FlatHeader.scss";
 
-function FlatHeader({flat}) {
+function FlatHeader({ flat }) {
   // Création du header de la page flat
 
   return (
@@ -11,7 +11,7 @@ function FlatHeader({flat}) {
         <h2 className="flat-page__subtitle">{flat.location}</h2>
         <div className="flat__tags">
           {flat.tags.map((tag) => (
-            // Création de span pour chaque data tag 
+            // Création de span pour chaque data tag
             <span key={tag}>{tag}</span>
           ))}
         </div>
@@ -23,7 +23,9 @@ function FlatHeader({flat}) {
         </div>
         <div className="flat__owner__stars">
           {[1, 2, 3, 4, 5].map((num) => (
-            <span key={num} className={flat.rating >= num ? "on" : ""}>★</span>
+            <span key={num} className={flat.rating >= num ? "on" : ""}>
+              ★
+            </span>
             // pour chaque numéro création d'une span avec une étoile de couleur par defaut grise mais si le rating
             // est superieur ou égale au numéro création d'une classe 'on'
           ))}

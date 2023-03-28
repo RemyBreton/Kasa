@@ -7,7 +7,7 @@ function CarouselBanner(props) {
   const pictures = props.pictures;
 
   const [currentPicture, setCurrentPicture] = useState(0);
-  // currentPicture commence à 0
+  // variable d'etat, que nous appellerons currentPicture initialisé à 0
 
   const getClassName = (i) => {
     // si currentPicture+1 ajout de la className "Show"
@@ -66,11 +66,8 @@ function CarouselBanner(props) {
             onClick={previous}
           />
           <span>{currentPicture + 1 + "/" + pictures.length}</span>
-          <img
-            className="btn-next"
-            src={chevronNext}
-            onClick={next}
-          />
+          // calcul pour afficher "1/4" en fonction de l'image et du nombre de picture dans les données de l'appartement
+          <img className="btn-next" src={chevronNext} onClick={next} />
         </>
       )}
     </div>

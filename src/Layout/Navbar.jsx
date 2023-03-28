@@ -6,6 +6,7 @@ import logo from "../assets/logo.svg";
 
 function Navbar() {
   // Création d'une Navbar
+  // utilisation de navlink de react router pour passer un .active en fonction de la page active
   return (
     <header className="header">
       <Link to="/">

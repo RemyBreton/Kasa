@@ -1,13 +1,13 @@
 import React from "react";
 
 import DescriptionPanel from "../components/DescriptionPanel";
-import bannerImg from '../assets/AboutBanner.svg'
+import bannerImg from "../assets/AboutBanner.svg";
 import Banner from "../components/Banner.jsx";
 import "../styles/About.scss";
 
 function About() {
   // Création de la page a propos avec les composant Banner && DescriptionPAnel
-
+  // on y passe directemenet leurs contenu individuellement title et content
   return (
     <>
       <Banner bannerImg={bannerImg} />
