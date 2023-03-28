@@ -66,7 +66,7 @@ function CarouselBanner(props) {
             onClick={previous}
           />
           <span>{currentPicture + 1 + "/" + pictures.length}</span>
-          // calcul pour afficher "1/4" en fonction de l'image et du nombre de picture dans les données de l'appartement
+          {/*calcul pour afficher "1/4" en fonction de l'image et du nombre de picture dans les données de l'appartement */}
           <img className="btn-next" src={chevronNext} onClick={next} />
         </>
       )}
