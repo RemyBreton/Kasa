@@ -30,7 +30,7 @@
             border-radius: 10px;
             text-align: center;
             padding: 0.3em 0.5em;
-            width: 115px;
+            min-width: 115px;
         }
     }
 
@@ -99,7 +99,7 @@
 
             span {
                 font-size: 10px;
-                width: 85px;
+                min-width: 85px;
             }
         }
 
