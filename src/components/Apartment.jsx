@@ -8,7 +8,7 @@ function Apartment(props) {
   return (
     <Link
       className="apartment__anchor"
-      to="/flat"
+      to={`/flat/${props.id}`}
       state={{
         apartmentId: props.id,
       }}

@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/flat",
+        path: "/flat/:id",
         element: <FlatPage /> 
       },
       {
