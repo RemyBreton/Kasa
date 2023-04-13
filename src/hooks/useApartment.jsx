@@ -7,7 +7,7 @@ function useApartment() {
   const location = useLocation();
   useEffect(() => {
     // fetch du db.Json par rapport à son id de location afin de renvoyer l'objet correspondant
-
+    const abordController = new AbortController();
     fetch("https://remybreton.github.io/api/db.json")
       .then((res) => res.json())
       .then((flats) => {
@@ -17,6 +17,10 @@ function useApartment() {
         setFlat(flat);
       })
       .catch(console.error);
+    return () => {
+      // function de clean up en mode dev toujours appelé en first arretera le fetch lorsce que le composant est demonté
+      abordController.abort();
+    };
   }, []);
   return flat;
 }
